@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name": "Movie Ratings for Netflix",
+	"version": "1.0",
+	"description": "Gives you ratings for movies on Netflix",
+	"content_scripts": [
+		{
+			"matches": [
+				"*://www.netflix.com/*"
+			],
+			"js": ["content.js"]
+		}
+	],
+	"background":  {
+		"scripts": ["background.js"]
+	}
+}
